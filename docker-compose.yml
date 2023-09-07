@@ -6,7 +6,9 @@ services:
     restart: unless-stopped
     ports:
       - "80:80" # http traffic
+      - "88:88" # http traffic
       - "443:443" # https traffic
+      - "3000:3000" # testing
       - "443:443/udp" #http3 traffic
       - "2019:2019" # caddy uses for admin purposes
     volumes:
@@ -14,6 +16,8 @@ services:
       - ./site:/srv
       - caddy_data:/data
       - caddy_config:/config
+    extra_hosts:
+      - host.docker.internal:host-gateway
 
 volumes:
   caddy_data:
