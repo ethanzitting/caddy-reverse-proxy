@@ -4,7 +4,7 @@ depending on the domain of the traffic, route it to other dockerized projects
 running on the server.
 
 # Requirements
-- Docker Compose
+- Caddy
 
 # Setting up the droplet
 - Use Ubuntu
@@ -15,6 +15,7 @@ running on the server.
 - Ensure password access to the droplet is disabled
 - Use UFW to disabled all ports other than 80, 443, and 22
 - Ensure docker compose is installed, and your user has permission to use it
+- Ensure Caddy is installed, and your use has permission to use it
 
 
 // What is the the deal?
