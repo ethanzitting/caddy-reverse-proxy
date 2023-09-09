@@ -1,7 +1,7 @@
-http://localhost:88 {
-	file_server
+{$PROJECT_ONE_PORT} {
+    reverse_proxy host.docker.internal:{$PROJECT_ONE_PORT}
 }
 
-http://localhost:3000 {
-    reverse_proxy host.docker.internal:8080
+{$PROJECT_TWO_PORT} {
+    reverse_proxy host.docker.internal:{$PROJECT_TWO_PORT_
 }
