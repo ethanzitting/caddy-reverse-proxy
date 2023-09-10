@@ -1,7 +1,7 @@
-{$PROJECT_ONE_PORT} {
+{$PROJECT_ONE_DOMAIN} {
     reverse_proxy host.docker.internal:{$PROJECT_ONE_PORT}
 }
 
-{$PROJECT_TWO_PORT} {
-    reverse_proxy host.docker.internal:{$PROJECT_TWO_PORT_
+{$PROJECT_TWO_DOMAIN} {
+    reverse_proxy host.docker.internal:{$PROJECT_TWO_PORT}
 }
