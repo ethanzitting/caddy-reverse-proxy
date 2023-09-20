@@ -1,7 +1,7 @@
-{$PROJECT_ONE_DOMAIN} {
-    reverse_proxy host.docker.internal:{$PROJECT_ONE_PORT}
+localhost:80 {
+	file_server
 }
 
-{$PROJECT_TWO_DOMAIN} {
-    reverse_proxy host.docker.internal:{$PROJECT_TWO_PORT}
+https://www.motherhoodreclaimed.org {
+    reverse_proxy host.docker.internal:8080
 }

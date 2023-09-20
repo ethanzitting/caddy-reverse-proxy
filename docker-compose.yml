@@ -18,7 +18,13 @@ services:
       - caddy_config:/config
     extra_hosts:
       - host.docker.internal:host-gateway
+    networks:
+      - caddy
 
 volumes:
   caddy_data:
   caddy_config:
+networks:
+  caddy:
+    name: caddy
+    driver: bridge
