@@ -3,5 +3,5 @@ localhost:80 {
 }
 
 https://www.motherhoodreclaimed.org {
-    reverse_proxy host.docker.internal:8080
+    reverse_proxy motherhood-reclaimed-website-web-1:8080
 }
