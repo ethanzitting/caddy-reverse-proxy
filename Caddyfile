@@ -5,3 +5,7 @@ localhost:80 {
 https://www.motherhoodreclaimed.org {
     reverse_proxy motherhood-reclaimed-website-web-1:8080
 }
+
+https://motherhoodreclaimed.org {
+    reverse_proxy motherhood-reclaimed-website-web-1:8080
+}
