@@ -2,10 +2,10 @@ localhost:80 {
 	file_server
 }
 
-https://www.motherhoodreclaimed.org {
-    reverse_proxy motherhood-reclaimed-website-web-1:8080
+http://ethanzitting.com {
+    reverse_proxy personal-website-site-1:3000
 }
 
-https://motherhoodreclaimed.org {
-    reverse_proxy motherhood-reclaimed-website-web-1:8080
+https://ethanzitting.com {
+    reverse_proxy personal-website-site-1:3000
 }

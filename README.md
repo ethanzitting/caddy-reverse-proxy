@@ -26,5 +26,5 @@ running on the server.
 // ip. The best option he suggested though would be to have all the projects and
 // the caddy reverse proxy running in the same docker network. This would be 
 // more secure, as it would mean the databases aren't exposed to the whole server.
-// He said that this may not work, as the projects may have mysql containers 
+// He said that this may not work, as the projects may have mysql containers with
 // identical names.
