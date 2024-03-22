@@ -1,7 +1,3 @@
-localhost:80 {
-	file_server
-}
-
 https://ethanzitting.com {
     reverse_proxy personal-website-site-1:3000
 }
