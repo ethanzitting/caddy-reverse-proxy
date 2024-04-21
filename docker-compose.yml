@@ -5,10 +5,10 @@ services:
     image: caddy:2.7
     restart: unless-stopped
     ports:
-      - "80:80" # http traffic
-      - "443:443" # https traffic
-      - "443:443/udp" #http3 traffic
-      - "2019:2019" # caddy uses for admin purposes
+      - "127.0.0.1:80:80" # http traffic
+      - "127.0.0.1:443:443" # https traffic
+      - "127.0.0.1:443:443/udp" #http3 traffic
+      - "127.0.0.1:2019:2019" # caddy uses for admin purposes
     volumes:
       - ./Caddyfile:/etc/caddy/Caddyfile
       - ./site:/srv
